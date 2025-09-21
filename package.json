@@ -1,0 +1,29 @@
+{
+  "name": "typescript-project",
+  "version": "1.0.0",
+  "description": "A fresh TypeScript project",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node src/index.js",
+    "dev": "ts-node src/index.ts",
+    "watch": "nodemon --exec ts-node src/index.ts",
+    "clean": "rimraf dist",
+    "visualizer": "npm run build && npx live-server src --port=8080",
+    "visualizer:dev": "tsc --watch & npx live-server src --port=8080"
+  },
+  "keywords": [
+    "typescript",
+    "node"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "live-server": "^1.2.2",
+    "nodemon": "^3.1.10",
+    "rimraf": "^5.0.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}

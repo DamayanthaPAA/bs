@@ -1,0 +1,11 @@
+declare const ARRAY_SIZE = 20;
+declare const DELAY = 200;
+declare let array: number[];
+declare let audioCtx: AudioContext | null;
+declare const container: HTMLElement | null;
+declare function init(): void;
+declare function playNote(freq: number): void;
+declare function play(): void;
+declare function showBars(): void;
+declare function bubbleSort(): void;
+declare function highlightBars(index1: number, index2: number): void;
